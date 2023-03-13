@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9EFFDEE3-0850-41F6-BB87-07FA220FD17D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Flappy_Bird_Atestat</RootNamespace>
+    <AssemblyName>Flappy_Bird_Atestat</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="variabile.cs" />
+    <Compile Include="Customize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customize.Designer.cs">
+      <DependentUpon>Customize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Joc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Joc.Designer.cs">
+      <DependentUpon>Joc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructiuni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructiuni.Designer.cs">
+      <DependentUpon>Instructiuni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Customize.resx">
+      <DependentUpon>Customize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Joc.resx">
+      <DependentUpon>Joc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructiuni.resx">
+      <DependentUpon>Instructiuni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bird.png.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pipedown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ban.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ban1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ban2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ban3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Coin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\poze.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\p1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bird1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bird2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bird3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bird4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bird5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bird6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\p2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\p3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\p4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\p5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\screenshot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\screenshot2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\screenshot3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\screenshot4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\p6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\p7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\heart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\heart2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
